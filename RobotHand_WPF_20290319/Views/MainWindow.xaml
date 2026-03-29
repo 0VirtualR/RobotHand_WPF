@@ -5,78 +5,76 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RobotHand_WPF_20290319"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        mc:Ignorable="d"
-        Title="机械臂注胶上位机程序"    Height="600"   Width="1000"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:ext="clr-namespace:RobotHand_WPF_20290319.Extensions"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        mc:Ignorable="d"   Height="600"   Width="1000"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
         Style="{DynamicResource MaterialDesignWindow}">
 
-    <Grid>
-        <materialDesign:DialogHost DialogTheme="Inherit" x:Name="DialogHost" Identifier="Root">
-            <materialDesign:DrawerHost x:Name="DrawerHost" IsLeftDrawerOpen="{Binding IsOpenMainLeftForm}">
-                <materialDesign:DrawerHost.LeftDrawerContent>
-                    <StackPanel>
-                        
-                    </StackPanel>
-                </materialDesign:DrawerHost.LeftDrawerContent>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="60"/>
-                        <RowDefinition/>
-                        <RowDefinition Height="60"/>
-                    </Grid.RowDefinitions>
-                    <DockPanel LastChildFill="False" Margin="20,0">
-                        <Button Content="开始程序"/>
-                        <Button Content="初始化程序" DockPanel.Dock="Right"/>
+    <materialDesign:DialogHost x:Name="DialogHost" Identifier="Root">
+        <materialDesign:DrawerHost x:Name="drawerHost" IsRightDrawerOpen="{Binding ElementName=MenuToggleButton,Path=IsChecked}">
+            <materialDesign:DrawerHost.RightDrawerContent>
+                <DockPanel MinWidth="200" Margin="10,30">
+                    <TextBlock Text="设置选择" FontSize="33" DockPanel.Dock="Top"/>
+                    <ListBox x:Name="MenuBar" ItemContainerStyle="{StaticResource MyListBoxItemStyle}"
+                             ItemsSource="{Binding MenuBars}">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="SelectionChanged">
+                                <i:InvokeCommandAction Command="{Binding NavigateCommand}"
+   CommandParameter="{Binding SelectedItem,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=ListBox}}"/>
+                                
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Background="Transparent" Orientation="Horizontal">
+                                    <materialDesign:PackIcon Margin="15,0" Kind="{Binding Icon}"/>
+                                    <TextBlock Margin="10,0" Text="{Binding Title}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </DockPanel>
+            </materialDesign:DrawerHost.RightDrawerContent>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <materialDesign:Snackbar x:Name="Snackbar" Panel.ZIndex="1" MessageQueue="{materialDesign:MessageQueue}"/>
+                <materialDesign:ColorZone x:Name="ColorZone" Padding="16"   Mode="PrimaryMid" >
+                    <DockPanel>
+                        <TextBlock Text="上位机注胶程序" FontSize="34" Margin="20,0"/>
+                        <DockPanel LastChildFill="False">
+                            <ToggleButton
+         x:Name="MenuToggleButton"
+         AutomationProperties.Name="HamburgerToggleButton"
+         IsChecked="False"
+         Style="{StaticResource MaterialDesignHamburgerToggleButton}" />
+
+                            <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                                <Button   x:Name="btnMin"  Content="—"
+       Style="{StaticResource MaterialDesignFlatMidBgButton}" />
+                                <Button   x:Name="btnMax"  Content="☐"  
+       Style="{StaticResource MaterialDesignFlatMidBgButton}" />
+                                <Button   x:Name="btnClose"    Content="✕"
+       Style="{StaticResource MaterialDesignFlatMidBgButton}" />
+                            </StackPanel>
+                        </DockPanel>
                     </DockPanel>
-                    <Grid Grid.Row="1">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="650"/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
-                        <Grid>
-                            <Canvas x:Name="OverlayCanvas" Margin="15,5" IsHitTestVisible="False"/>
-                            <Image x:Name="ImageView" Margin="15,5" Stretch="Uniform"/>
-                        </Grid>
-                        <StackPanel Grid.Column="1">
-                            <TextBlock Text="串口操作：" FontSize="22"  Margin="25,10"/>
-                            <Grid Margin="20"  Height="134" Width="308">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition />
-                                    <RowDefinition />
-                                    <RowDefinition />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="AUTO" />
-                                    <ColumnDefinition Width="95*"/>
-                                    <ColumnDefinition Width="213*"/>
-                                </Grid.ColumnDefinitions>
-                                <Label Content="串口号：" FontSize="20"  HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="1" Height="32" Width="90"/>
-                                <ComboBox Height="25" Width="120"  x:Name="ComboBoxSerial" VerticalAlignment="Center" Grid.Column="2">
-                                    <ComboBox.ItemTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="{Binding}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14" Foreground="Black"/>
-                                        </DataTemplate>
-                                    </ComboBox.ItemTemplate>
-                                </ComboBox>
+                </materialDesign:ColorZone>
+                <ContentControl Grid.Row="1" prism:RegionManager.RegionName="{x:Static ext:PrismManager.MainViewRegionName }"/>
 
-                                <Label Content="波特率：" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Height="33" Width="90"/>
-                                <ComboBox Width="120" Height="25" x:Name="ComboBoxRate" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2">
-                                    <ComboBox.ItemTemplate>
-                                        <DataTemplate>
-                                            <TextBlock Text="{Binding}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14" Foreground="Black"/>
-                                        </DataTemplate>
-                                    </ComboBox.ItemTemplate>
-                                </ComboBox>
+                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                    <TextBlock Text="提示信息1" FontSize="29" Margin="10"/>
+                    <TextBlock Text="提示信息2" FontSize="29" Margin="10"/>
+                    <TextBlock Text="提示信息3" FontSize="29" Margin="10"/>
+                </StackPanel>
 
-                                <Button HorizontalAlignment="Center" Content="连接" FontSize="20" Width="100" Background="#0077C0" Foreground="White" BorderBrush="#003C60" BorderThickness="0" Margin="0,3,0,-1"  Grid.Row="2" Grid.Column="2" Click="ConnectPort_Click" x:Name="Connection"/>
-                                <Ellipse Width="30" Height="30" Fill="Red" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" x:Name="PortLight"/>
-                            </Grid>
-                            <TextBlock Text="运行日志：" FontSize="22"  Margin="25,10"/>
-                            <ListBox Name="LogBox"   Height="124"   Margin="10"/>
-                        </StackPanel>
-                    </Grid>
-                </Grid>
-            </materialDesign:DrawerHost>
-        </materialDesign:DialogHost>
-
-    </Grid>
+            </Grid>
+        </materialDesign:DrawerHost>
+    </materialDesign:DialogHost>
 </Window>

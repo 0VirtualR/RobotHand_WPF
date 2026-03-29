@@ -1219,23 +1219,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "D:\\Software\\VS2022\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "D:\\Software\\VisualStudio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj",
+      "projectUniqueName": "E:\\SourceTree_Project\\RobotHand_WPF\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj",
       "projectName": "RobotHand_WPF_20290319",
-      "projectPath": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319\\obj\\",
+      "projectPath": "E:\\SourceTree_Project\\RobotHand_WPF\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "E:\\SourceTree_Project\\RobotHand_WPF\\RobotHand_WPF_20290319\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Software\\VS2022\\Shared\\NuGetPackages"
+        "D:\\Software\\VisualStudio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1244,6 +1244,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1262,7 +1263,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -1296,7 +1297,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

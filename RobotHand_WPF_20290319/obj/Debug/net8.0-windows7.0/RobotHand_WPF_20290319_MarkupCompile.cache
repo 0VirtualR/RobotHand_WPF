@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\obj\Debug\net8.0-windows7.0\
+E:\SourceTree_Project\RobotHand_WPF\RobotHand_WPF_20290319\obj\Debug\net8.0-windows7.0\
 RobotHand_WPF_20290319
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\App.xaml
-1-1644662438
-
-4-680153356
-2051409930068
-Views\MainWindow.xaml;
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+E:\SourceTree_Project\RobotHand_WPF\RobotHand_WPF_20290319\App.xaml
+5-1301044935
+22-508736223
+15-849448801
+205489100840
+Views\CameraView.xaml;Views\Dialogs\MsgView.xaml;Views\IndexView.xaml;Views\MainWindow.xaml;Views\SettingsView.xaml;
 
 False
 
