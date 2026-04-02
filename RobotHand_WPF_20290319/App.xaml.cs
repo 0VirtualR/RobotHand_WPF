@@ -4,6 +4,7 @@ using Prism.Events;
 using Prism.Ioc;
 using Prism.Regions;
 using RobotHand_WPF_20290319.Extensions;
+using RobotHand_WPF_20290319.Extensions.SerialPorts;
 using RobotHand_WPF_20290319.ViewModels;
 using RobotHand_WPF_20290319.Views;
 using RobotHand_WPF_20290319.Views.Dialogs;
@@ -31,6 +32,7 @@ namespace RobotHand_WPF_20290319
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterSingleton<ISerialPortService, SerialPortService>();
             containerRegistry.RegisterForNavigation<MainWindow, MainWindowViewModel>();
             containerRegistry.RegisterForNavigation<IndexView,IndexViewModel>();
             containerRegistry.RegisterForNavigation<CameraView,CameraViewModel>();

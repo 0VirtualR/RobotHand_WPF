@@ -1,5 +1,7 @@
-﻿using System;
+﻿using RobotHand_WPF_20290319.ViewModels;
+using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,8 @@ namespace RobotHand_WPF_20290319.Views
         public CameraView()
         {
             InitializeComponent();
+
+          
         }
     }
 }
