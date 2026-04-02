@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gh2e9d8ev0k=",
+  "dgSpecHash": "5TPT4NV9Bdg=",
   "success": true,
   "projectFilePath": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\materialdesignthemes\\5.3.1\\materialdesignthemes.5.3.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.win32.systemevents\\10.0.5\\microsoft.win32.systemevents.10.0.5.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\prism.dryioc\\8.1.97\\prism.dryioc.8.1.97.nupkg.sha512",
@@ -30,6 +31,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\runtime.native.system.io.ports\\10.0.5\\runtime.native.system.io.ports.10.0.5.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\10.0.5\\runtime.osx-arm64.runtime.native.system.io.ports.10.0.5.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\10.0.5\\runtime.osx-x64.runtime.native.system.io.ports.10.0.5.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.drawing.common\\10.0.5\\system.drawing.common.10.0.5.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.io.ports\\10.0.5\\system.io.ports.10.0.5.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",

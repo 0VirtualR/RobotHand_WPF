@@ -96,3 +96,9 @@ E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\bin\Debug\net8.0-
 E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\bin\Debug\net8.0-windows7.0\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
 E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\bin\Debug\net8.0-windows7.0\runtimes\unix\lib\net8.0\System.IO.Ports.dll
 E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\bin\Debug\net8.0-windows7.0\runtimes\win\lib\net8.0\System.IO.Ports.dll
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\bin\Debug\net8.0-windows7.0\Microsoft.Win32.SystemEvents.dll
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\bin\Debug\net8.0-windows7.0\System.Drawing.Common.dll
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\bin\Debug\net8.0-windows7.0\System.Private.Windows.Core.dll
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\bin\Debug\net8.0-windows7.0\System.Private.Windows.GdiPlus.dll
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\bin\Debug\net8.0-windows7.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\bin\Debug\net8.0-windows7.0\MVSDK.dll

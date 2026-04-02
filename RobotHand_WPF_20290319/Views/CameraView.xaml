@@ -15,7 +15,7 @@
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
         <DockPanel LastChildFill="False" Margin="20,0">
-            <Button Content="开始程序"/>
+            <Button Content="开始程序" Command="{Binding InitCommand}"/>
             <Button Content="初始化程序" DockPanel.Dock="Right"/>
         </DockPanel>
         <Grid Grid.Row="1">
@@ -25,7 +25,7 @@
             </Grid.ColumnDefinitions>
             <Grid>
                 <Canvas x:Name="OverlayCanvas" Margin="15,5" IsHitTestVisible="False"/>
-                <Image x:Name="ImageView" Margin="15,5" Stretch="Uniform"/>
+                <Image Source="{Binding CurrentFrame}"  Margin="15,5" Stretch="Uniform"/>
             </Grid>
             <DockPanel Grid.Column="1">
                 <TextBlock Text="串口操作：" FontSize="22" DockPanel.Dock="Top" />
