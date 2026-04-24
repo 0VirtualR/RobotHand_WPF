@@ -54,9 +54,33 @@
               "target": "Package",
               "version": "[5.3.1, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.13.0.20260330, )"
+            },
+            "OpenCvSharp4Fork.WpfExtensions": {
+              "target": "Package",
+              "version": "[4.11.0.20251214, )"
+            },
             "Prism.DryIoc": {
               "target": "Package",
               "version": "[8.1.97, )"
+            },
+            "Sdcb.OpenVINO": {
+              "target": "Package",
+              "version": "[0.7.0, )"
+            },
+            "Sdcb.OpenVINO.Extensions.OpenCvSharp4": {
+              "target": "Package",
+              "version": "[0.7.0, )"
+            },
+            "Sdcb.OpenVINO.runtime.win-x64": {
+              "target": "Package",
+              "version": "[2025.2.0.1, )"
             },
             "System.Drawing.Common": {
               "target": "Package",

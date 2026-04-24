@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}|RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj|e:\\wpf_2023-10-9\\robothand_wpf_20290319\\robothand_wpf_20290319\\extensions\\camera\\cameraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}|RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj|solutionrelative:robothand_wpf_20290319\\extensions\\camera\\cameraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}|RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj|e:\\wpf_2023-10-9\\robothand_wpf_20290319\\robothand_wpf_20290319\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}|RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj|solutionrelative:robothand_wpf_20290319\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}|RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj|e:\\wpf_2023-10-9\\robothand_wpf_20290319\\robothand_wpf_20290319\\viewmodels\\cameraviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}|RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj|solutionrelative:robothand_wpf_20290319\\viewmodels\\cameraviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}|RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj|e:\\wpf_2023-10-9\\robothand_wpf_20290319\\robothand_wpf_20290319\\views\\cameraview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}|RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj|solutionrelative:robothand_wpf_20290319\\views\\cameraview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}|RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj|e:\\wpf_2023-10-9\\robothand_wpf_20290319\\robothand_wpf_20290319\\viewmodels\\cameraviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}|RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj|solutionrelative:robothand_wpf_20290319\\viewmodels\\cameraviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}|RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj|e:\\wpf_2023-10-9\\robothand_wpf_20290319\\robothand_wpf_20290319\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}|RobotHand_WPF_20290319\\RobotHand_WPF_20290319.csproj|solutionrelative:robothand_wpf_20290319\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,33 +46,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319\\App.xaml.cs",
               "RelativeDocumentMoniker": "RobotHand_WPF_20290319\\App.xaml.cs",
-              "ToolTip": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319\\App.xaml.cs*",
-              "RelativeToolTip": "RobotHand_WPF_20290319\\App.xaml.cs*",
-              "ViewState": "AgIAABIAAAAAAAAAAAAxwCQAAABKAAAAAAAAAA==",
+              "ToolTip": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319\\App.xaml.cs",
+              "RelativeToolTip": "RobotHand_WPF_20290319\\App.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAADwvyQAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T07:11:58.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CameraService.cs",
-              "DocumentMoniker": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319\\Extensions\\Camera\\CameraService.cs",
-              "RelativeDocumentMoniker": "RobotHand_WPF_20290319\\Extensions\\Camera\\CameraService.cs",
-              "ToolTip": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319\\Extensions\\Camera\\CameraService.cs",
-              "RelativeToolTip": "RobotHand_WPF_20290319\\Extensions\\Camera\\CameraService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T07:09:21.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CameraView.xaml",
               "DocumentMoniker": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319\\Views\\CameraView.xaml",
               "RelativeDocumentMoniker": "RobotHand_WPF_20290319\\Views\\CameraView.xaml",
@@ -88,13 +71,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "CameraViewModel.cs",
               "DocumentMoniker": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319\\ViewModels\\CameraViewModel.cs",
               "RelativeDocumentMoniker": "RobotHand_WPF_20290319\\ViewModels\\CameraViewModel.cs",
               "ToolTip": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\RobotHand_WPF_20290319\\ViewModels\\CameraViewModel.cs",
               "RelativeToolTip": "RobotHand_WPF_20290319\\ViewModels\\CameraViewModel.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAcwEAAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAuwMQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T11:23:02.796Z",
               "EditorCaption": ""

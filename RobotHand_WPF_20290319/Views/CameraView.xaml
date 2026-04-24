@@ -7,7 +7,8 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
              Foreground="Green"
-             d:DesignHeight="450" d:DesignWidth="800">
+             Height="600"
+ Width="1000">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
@@ -15,7 +16,7 @@
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
         <DockPanel LastChildFill="False" Margin="20,0">
-            <Button Content="开始程序" Command="{Binding InitCommand}"/>
+            <Button Content="{Binding BtnStateMsg}" Command="{Binding InitCommand}"/>
             <Button Content="初始化程序" DockPanel.Dock="Right"/>
         </DockPanel>
         <Grid Grid.Row="1">
@@ -37,7 +38,7 @@
                     </Grid.RowDefinitions>
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="串口号：" FontSize="20"  HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="1" Height="32" Width="90"/>
-                        <ComboBox Height="25" Width="120" VerticalAlignment="Center" Grid.Column="2"
+                        <ComboBox SelectedIndex="0" Height="25" Width="120" VerticalAlignment="Center" Grid.Column="2"
            ItemsSource="{Binding AvailablePorts}"
            SelectedItem="{Binding SelectedPort,UpdateSourceTrigger=PropertyChanged}">
                             <ComboBox.ItemTemplate>
@@ -49,7 +50,7 @@
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Grid.Row="1">
                         <TextBlock Text="波特率：" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Height="33" Width="90"/>
-                        <ComboBox Width="120" Height="25" x:Name="ComboBoxRate" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2"
+                        <ComboBox SelectedIndex="0" Width="120" Height="25" x:Name="ComboBoxRate" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2"
             ItemsSource="{Binding BandRates}" SelectedItem="{Binding SelectBandRate,UpdateSourceTrigger=PropertyChanged}">
                             <ComboBox.ItemTemplate>
                                 <DataTemplate>

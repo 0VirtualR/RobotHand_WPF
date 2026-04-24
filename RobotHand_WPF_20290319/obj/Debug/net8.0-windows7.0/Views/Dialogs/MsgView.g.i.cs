@@ -53,7 +53,7 @@ namespace RobotHand_WPF_20290319.Views.Dialogs {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/RobotHand_WPF_20290319;component/views/dialogs/msgview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/RobotHand_WPF_20290319;V1.0.0.0;component/views/dialogs/msgview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Dialogs\MsgView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

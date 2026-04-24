@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
@@ -35,7 +36,13 @@
 
   <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="5.3.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="OpenCvSharp4" Version="4.13.0.20260330" />
+    <PackageReference Include="OpenCvSharp4Fork.WpfExtensions" Version="4.11.0.20251214" />
     <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+    <PackageReference Include="Sdcb.OpenVINO" Version="0.7.0" />
+    <PackageReference Include="Sdcb.OpenVINO.Extensions.OpenCvSharp4" Version="0.7.0" />
+    <PackageReference Include="Sdcb.OpenVINO.runtime.win-x64" Version="2025.2.0.1" />
     <PackageReference Include="System.Drawing.Common" Version="10.0.5" />
     <PackageReference Include="System.IO.Ports" Version="10.0.5" />
   </ItemGroup>

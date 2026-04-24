@@ -22,6 +22,9 @@ using System.Net;
 using System.Runtime.InteropServices;
 using System.Windows.Media.Imaging;
 using RobotHand_WPF_20290319.Extensions.Camera;
+using System.Windows.Media;
+using System.Windows.Shapes;
+using RobotHand_20260313.Extensions;
 
 namespace RobotHand_WPF_20290319.ViewModels
 {
@@ -43,22 +46,51 @@ namespace RobotHand_WPF_20290319.ViewModels
             ConnectCommmand = new DelegateCommand(Connect);
 
             LoadAvailablePorts();
-
+            cameraService.Initialize();
         }
 
 
         private void Init()
         {
-            if (serialPortService.IsOpen)
-            {
-                cameraService.Initialize();
-            }
+            //打开初始化窗口 进行十个点的定位
+          
         }
         private void Start()
         {
-            throw new NotImplementedException();
-        }
+            if (IsStartWork == false)
+            {
+                if (!serialPortService.IsOpen)
+                {
+                    AddLog("串口没有打开！");
+                    return;
+                }
+              
+                IsStartWork = true;
 
+                BtnStateMsg = "停止程序";
+            }
+            else
+            {
+                IsStartWork = false;
+                BtnStateMsg = "开始程序";
+                if (serialPortService.IsOpen)
+                    CLoseRobotPort();
+            }
+
+        }
+        private bool isStartWork;
+        public bool IsStartWork
+        {
+            get { return isStartWork; }
+            set { SetProperty(ref isStartWork, value); }
+        }
+        //开始按钮的字符串提示消息
+        private string btnStateMsg;
+        public string BtnStateMsg
+        {
+            get { return btnStateMsg; }
+            set { SetProperty(ref btnStateMsg, value); }
+        }
 
         #region 视频相关联属性
         private BitmapSource currentFrame;
@@ -110,19 +142,84 @@ namespace RobotHand_WPF_20290319.ViewModels
         {
             115200,9600
         };
+        public async void ControlMoveFunc(string data)
+        {
+            try
+            {
+                // 命令类型	数据长度	数据内容
+                //命令类型 20前进 21 后退
+                // 数据长度 帧数据内容的长度    01
+                //数据内容 是哪个轴移动，00 x轴 01 y轴 02 z轴
+
+                //string data = "200100";
+                string crc = UsingModel.CalculateCrc(data);
+
+                string cmd = "FFE0" + data + crc + "FFE1";
+
+
+                await serialPortService.SendAsync(cmd);
+
+                if (data.Substring(0, 2) == "24")
+                {
+                    cmd = "向前——" + cmd;
+                }
+                else if (data.Substring(0, 2) == "25")
+                {
+                    cmd = "向后——" + cmd;
+                }
+                else if (data.Substring(0, 2) == "22")
+                {
+                    cmd = "停止——" + cmd;
+                }
+
+                if (data.Substring(4, 2) == "00")
+                {
+                    cmd = "X轴" + cmd;
+                }
+                else if (data.Substring(4, 2) == "01")
+                {
+                    cmd = "Y轴" + cmd;
+                }
+                else if (data.Substring(4, 2) == "02")
+                {
+                    cmd = "Z轴" + cmd;
+                }
+
+                AddLog("发送：" + cmd);
+            }
+            catch (Exception ex)
+            {
+                LogHelper.WriteOrderLog(ex.ToString());
+            }
+        }
+        private void CLoseRobotPort()
+        {
+
+            ControlMoveFunc("220100");
+            ControlMoveFunc("220101");
+            ControlMoveFunc("220102");
+            serialPortService.Close();
+            BtnConnectState = "连接";
+            BtnConnectStateColor = "Red";
+
+            AddLog("串口已断开");
+        }
         private void Connect()
         {
+
             try
             {
                 if (serialPortService.IsOpen)
                 {
-                    serialPortService.Close();
-                    BtnConnectState = "连接";
-                    BtnConnectStateColor = "Red";
-                    AddLog("串口已断开");
+                    CLoseRobotPort();
                 }
                 else
                 {
+                    if(string.IsNullOrWhiteSpace(SelectedPort)|| SelectBandRate <1)
+                    {
+                        AddLog("SelectedPort和SelectBandRate不能为空");
+                        return;
+                    }
                     serialPortService.Open(SelectedPort, SelectBandRate);
                     BtnConnectState = "断开";
                     BtnConnectStateColor = "Green";
@@ -169,6 +266,12 @@ namespace RobotHand_WPF_20290319.ViewModels
             cameraService.FrameReceived -= OnFrameReceived;
             cameraService.Dispose();
             currentFrame = null;
+
+            //串口
+            if (serialPortService.IsOpen)
+            {
+                CLoseRobotPort();
+            }
         }
     }
 }
