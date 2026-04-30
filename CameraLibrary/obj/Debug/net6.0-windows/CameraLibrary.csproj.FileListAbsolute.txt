@@ -1,0 +1,15 @@
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\obj\Debug\net6.0-windows\CameraLibrary.csproj.AssemblyReference.cache
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\obj\Debug\net6.0-windows\CameraLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\obj\Debug\net6.0-windows\CameraLibrary.AssemblyInfoInputs.cache
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\obj\Debug\net6.0-windows\CameraLibrary.AssemblyInfo.cs
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\obj\Debug\net6.0-windows\CameraLibrary.csproj.CoreCompileInputs.cache
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\obj\Debug\net6.0-windows\CameraLibrary.sourcelink.json
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\bin\Debug\net6.0-windows\CameraLibrary.deps.json
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\bin\Debug\net6.0-windows\CameraLibrary.dll
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\bin\Debug\net6.0-windows\CameraLibrary.pdb
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\bin\Debug\net6.0-windows\MVSDK.dll
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\obj\Debug\net6.0-windows\CameraLi.08A3CBDA.Up2Date
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\obj\Debug\net6.0-windows\CameraLibrary.dll
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\obj\Debug\net6.0-windows\refint\CameraLibrary.dll
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\obj\Debug\net6.0-windows\CameraLibrary.pdb
+E:\WPF_2023-10-9\RobotHand_WPF_20290319\CameraLibrary\obj\Debug\net6.0-windows\ref\CameraLibrary.dll

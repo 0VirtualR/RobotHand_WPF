@@ -73,6 +73,8 @@ namespace RobotHand_WPF_20290319.ViewModels
             MenuBars.Add(new MenuBar() { Icon = "NotebookOutline", Title = "初始化界面", NameSpace = "CameraView" });
        
             MenuBars.Add(new MenuBar() { Icon = "Cog", Title = "设置", NameSpace = "SettingsView" });
+            MenuBars.Add(new MenuBar() { Icon = "Cog", Title = "工业相机类库", NameSpace = "MvCameraView" });
+            MenuBars.Add(new MenuBar() { Icon = "Cog", Title = "工业相机类库2", NameSpace = "Mv2CameraView" });
         }
         #endregion
     }

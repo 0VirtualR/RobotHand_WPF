@@ -48,6 +48,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CameraLibrary\CameraLibrary.csproj" />
+    <ProjectReference Include="..\MvCameraLibrary\MvCameraLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="MVSDK">
       <HintPath>bin\Debug\net8.0-windows7.0\Extensiondll20260402\MVSDK.dll</HintPath>
     </Reference>

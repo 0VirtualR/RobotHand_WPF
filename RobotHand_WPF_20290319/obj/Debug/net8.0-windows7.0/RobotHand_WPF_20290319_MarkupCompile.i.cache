@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 E:\WPF_2023-10-9\RobotHand_WPF_20290319\RobotHand_WPF_20290319\App.xaml
-5-1301044935
+71760692052
 
-281475622295
-215-761249724
-Views\CameraView.xaml;Views\Dialogs\MsgView.xaml;Views\IndexView.xaml;Views\MainWindow.xaml;Views\SettingsView.xaml;
+321909317079
+217-1422344037
+Views\CameraView.xaml;Views\Dialogs\MsgView.xaml;Views\IndexView.xaml;Views\MainWindow.xaml;Views\Mv2CameraView.xaml;Views\MvCameraView.xaml;Views\SettingsView.xaml;
 
 False
 

@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35913.81 d17.13
+VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotHand_WPF_20290319", "RobotHand_WPF_20290319\RobotHand_WPF_20290319.csproj", "{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraLibrary", "CameraLibrary\CameraLibrary.csproj", "{9E1A028F-37DB-4C9D-A3CB-3BE9336A2126}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvCameraLibrary", "MvCameraLibrary\MvCameraLibrary.csproj", "{60A23A9E-9EFF-44BE-9991-7899BC90F2DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ECE615C-CD74-4FDD-BBC1-2FA82E527D0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E1A028F-37DB-4C9D-A3CB-3BE9336A2126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E1A028F-37DB-4C9D-A3CB-3BE9336A2126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E1A028F-37DB-4C9D-A3CB-3BE9336A2126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E1A028F-37DB-4C9D-A3CB-3BE9336A2126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60A23A9E-9EFF-44BE-9991-7899BC90F2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A23A9E-9EFF-44BE-9991-7899BC90F2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A23A9E-9EFF-44BE-9991-7899BC90F2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A23A9E-9EFF-44BE-9991-7899BC90F2DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

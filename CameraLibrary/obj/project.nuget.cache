@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ErwJjcsxn14=",
+  "success": true,
+  "projectFilePath": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\CameraLibrary\\CameraLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.drawing.common\\10.0.5\\system.drawing.common.10.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

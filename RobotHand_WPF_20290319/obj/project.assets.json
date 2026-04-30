@@ -1760,6 +1760,37 @@
             "related": ".xml"
           }
         }
+      },
+      "CameraLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Prism.Core": "8.1.97",
+          "System.Drawing.Common": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/CameraLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CameraLibrary.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "MvCameraLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Prism.DryIoc": "8.1.97",
+          "System.Drawing.Common": "10.0.5"
+        },
+        "compile": {
+          "bin/placeholder/MvCameraLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MvCameraLibrary.dll": {}
+        }
       }
     }
   },
@@ -3417,11 +3448,23 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "CameraLibrary/1.0.0": {
+      "type": "project",
+      "path": "../CameraLibrary/CameraLibrary.csproj",
+      "msbuildProject": "../CameraLibrary/CameraLibrary.csproj"
+    },
+    "MvCameraLibrary/1.0.0": {
+      "type": "project",
+      "path": "../MvCameraLibrary/MvCameraLibrary.csproj",
+      "msbuildProject": "../MvCameraLibrary/MvCameraLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "CameraLibrary >= 1.0.0",
       "MaterialDesignThemes >= 5.3.1",
+      "MvCameraLibrary >= 1.0.0",
       "Newtonsoft.Json >= 13.0.4",
       "OpenCvSharp4 >= 4.13.0.20260330",
       "OpenCvSharp4Fork.WpfExtensions >= 4.11.0.20251214",
@@ -3464,7 +3507,14 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\CameraLibrary\\CameraLibrary.csproj": {
+              "projectPath": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\CameraLibrary\\CameraLibrary.csproj"
+            },
+            "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\MvCameraLibrary\\MvCameraLibrary.csproj": {
+              "projectPath": "E:\\WPF_2023-10-9\\RobotHand_WPF_20290319\\MvCameraLibrary\\MvCameraLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

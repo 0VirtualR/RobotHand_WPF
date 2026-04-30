@@ -11,6 +11,12 @@
     <Compile Update="Views\IndexView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Mv2CameraView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\MvCameraView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\SettingsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -1,7 +1,10 @@
 ﻿
+using CameraLibrary;
+using MvCameraLibrary;
 using Prism.DryIoc;
 using Prism.Events;
 using Prism.Ioc;
+using Prism.Modularity;
 using Prism.Regions;
 using RobotHand_WPF_20290319.Extensions;
 using RobotHand_WPF_20290319.Extensions.Camera;
@@ -18,6 +21,12 @@ namespace RobotHand_WPF_20290319
     /// </summary>
     public partial class App : PrismApplication
     {
+        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
+        {
+            base.ConfigureModuleCatalog(moduleCatalog);
+            moduleCatalog.AddModule<MvCameraProfile>();
+            moduleCatalog.AddModule<Mv2CameraProfile>();
+        }
         protected override void OnInitialized()
         {
             base.OnInitialized();
@@ -34,7 +43,7 @@ namespace RobotHand_WPF_20290319
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterScoped<ISerialPortService, SerialPortService>();
-            containerRegistry.RegisterScoped<ICameraService, CameraService>();
+            //containerRegistry.RegisterScoped<ICameraService, CameraService>();
 
             containerRegistry.RegisterForNavigation<MainWindow, MainWindowViewModel>();
             containerRegistry.RegisterForNavigation<IndexView,IndexViewModel>();
@@ -42,6 +51,9 @@ namespace RobotHand_WPF_20290319
             containerRegistry.RegisterForNavigation<SettingsView,SettingsViewModel>();
 
             containerRegistry.RegisterDialog<MsgView, MsgViewModel>();
+
+            containerRegistry.RegisterForNavigation<MvCameraView, MvCameraViewModel>();
+            containerRegistry.RegisterForNavigation<Mv2CameraView, Mv2CameraViewModel>();
 
         }
     }
